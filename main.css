@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.quiz {
+    width: 500px;
+    box-shadow: 0 0 8px #ddd;
+    height: 400px;
+    margin: 50px auto;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.option {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    padding: 20px;
+}
+h2{
+    position: relative;
+    text-align: center;
+    display: none;
+    top: 150px;
+}
+footer p{
+    text-align: center;
+}
