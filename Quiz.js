@@ -3,31 +3,45 @@ class Quiz {
         this.questions = questions;
         this.currentQuestionIndex = 0;
         this.score = 0;
-        this.paragraph = '';
         this.totalPoints = 0;
     }
+
     getCurrentQuestion() {
         return this.questions[this.currentQuestionIndex];
     }
+
     checkAnswer(answer) {
         if (answer === this.getCurrentQuestion().answer) {
             this.score += this.getCurrentQuestion().points;
         }
         this.currentQuestionIndex++;
-
     }
+
     isEnd() {
         return this.currentQuestionIndex === this.questions.length;
     }
-    questionCounter() {
-        return this.paragraph = this.currentQuestionIndex + 1 + '/' + this.questions.length;
+
+    questionsCounter() {
+        return this.currentQuestionIndex + 1 + '/' + this.questions.length;
     }
-    QuestionsTotalPoints(){
-        for (let i = 0; i < questions.length; i++) {
-            this.totalPoints += questions[i].points;
+
+    questionsTotalPoints() {
+        for (let i = 0; i < this.questions.length; i++) {
+            this.totalPoints += this.questions[i].points;
         }
         return this.totalPoints;
     }
 }
 
-let quiz = new Quiz(questions);
+let xml = new XMLHttpRequest();
+xml.open('get', 'questions.json');
+xml.onreadystatechange = function () {
+    if (xml.readyState === 4 && xml.status === 200) {
+        let db = JSON.parse(xml.responseText);
+        let quiz = new Quiz(db);
+        mainCode(quiz);
+    }
+};
+xml.send();
+
+
