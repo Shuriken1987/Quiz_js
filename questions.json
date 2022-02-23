@@ -1,0 +1,38 @@
+[
+    {
+        "text": "Which country is not a member of a EU ?",
+        "options": ["Sweden","Denmark","Switzerland","Poland"],
+        "answer": "Switzerland",
+        "points": 1
+    },
+   {
+        "text": "Who acts Keyser Söze in Usual suspects movie ?",
+        "options": ["Al Pacino","Kevin Spacey","Robert De Niro","Benicio Del Toro"],
+        "answer": "Kevin Spacey",
+        "points": 5
+    },
+    {
+        "text": "Frontman of the Doors ?",
+        "options": ["Jimi Hendrix","Ian Gilian","Jim Morison","Nick Cave"],
+        "answer": "Jim Morison",
+        "points": 2
+    },
+    {
+        "text": "Capiatl city of Sweden ?",
+        "options": ["Copenhagen","Stockholm","Oslo","Helsinki"],
+        "answer": "Stockholm",
+        "points": 2
+    },
+    {
+        "text": "Most populated country in the world ?",
+        "options": ["USA","Russia","India","China"],
+        "answer": "China",
+        "points": 5
+    },
+    {
+        "text": "How high is Mount Everest ?",
+        "options": ["8,489 m","7,948 m","8,294 m","8,849 m"],
+        "answer": "8,849 m",
+        "points": 5
+    }
+]
